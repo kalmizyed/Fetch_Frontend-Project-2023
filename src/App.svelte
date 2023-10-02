@@ -47,5 +47,6 @@
     <Gallery
         items={images}
         class="gap-4 grid-cols-2 md:grid-cols-6"
+        imgClass={'object-cover h-auto max-w-full rounded-lg'}
     />
 </main>
