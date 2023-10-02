@@ -1,47 +1,38 @@
-# Svelte + Vite
+# Fetch Frontend Project - Fall 2023
+A simple web app that lets the user search for a dog breed and displays images
+of that breed of dog.
 
-This template should help get you started developing with Svelte in Vite.
 
-## Recommended IDE Setup
+## Quick Start
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+1. Clone this repo:
 
-## Need an official Svelte framework?
+```git clone https://github.com/kalmizyed/Fetch_Frontend-Project-2023.git```
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+2. Install the required dependencies with `npm`:
 
-## Technical considerations
+(If you don't have `npm` installed, you can [follow this guide.]([url](https://docs.npmjs.com/cli/v7/configuring-npm/install)https://docs.npmjs.com/cli/v7/configuring-npm/install))
 
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
 ```
+cd Fetch_Frontend-Project-2023/
+npm install
+```
+
+3. Build the app:
+
+```
+npm run build
+```
+
+4. Run a preview of the app:
+
+```
+npm run preview
+```
+
+## How to use
+
+The webpage has a searchbar at the top that provides an autocomplete dropdown;
+search for a breed and select the appropriate dropdown item.
+
+You can select more than one breed at a time; both sets of images will display.
